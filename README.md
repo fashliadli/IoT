@@ -54,13 +54,13 @@ Run the notebook to create these (they are saved in `figures/`):
    ```bash
    pip install pandas numpy matplotlib jupyter
    ```
-3. Open `Water_meter_clean.ipynb` and use **Restart & Run All**.
+3. Open `Water_meter.ipynb` and use **Restart & Run All**.
 
 Expected layout:
 
 ```text
 .
-├── Water_meter_clean.ipynb
+├── Water_meter.ipynb
 ├── WEUSEDTO-Data-<commit>/      # downloaded, not part of this repository
 │   └── Dataset/
 │       ├── feed_Shower.MYD.csv
