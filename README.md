@@ -19,27 +19,6 @@ Every section separates what was **measured** from what is **assumed or inferred
 
 The notebook also contains checks on the sensor working range and the tail of the distribution, event sizes and recording quality inside events, drift by month, a constant check for the step grid, shared data gaps across fixtures, and the use of each fixture. Read the printed tables and plots there.
 
-## Selected plots
-
-Run the notebook to create these (they are saved in `figures/`):
-
-| | |
-|---|---|
-| `plot0_first_readings.png` | The first readings by reading number and by real time |
-| `plot3_intervals.png` | Time between two readings |
-| `plot_event_sizes.png` | Duration, volume and mean flow of the long events |
-| `plot_lag.png` | Previous value vs current value |
-| `plot_entropy_ladder.png` | How hard is it to guess a reading? |
-| `plot_fixture_fingerprint.png` | Comparison of the fixtures |
-
-## Notebook structure
-
-| Part | Sections | Question |
-|---|---|---|
-| **A. Looking at the data** | 1–5 | What is in the file? How is a time series checked (size, missing values, regularity, gaps)? What do the values and the flow events look like? When is water used? |
-| **B. Looking deeper** | 6–9 | How predictable is the signal (autocorrelation, entropy)? How are the values built (step grid, pulse counting)? How large is the noise inside events? How does time behave (heartbeat)? |
-| **C. Other fixtures and summary** | 10–11 | Do the findings hold for the other fixtures? What are the overall findings, assumptions and limitations? |
-
 ## Data
 
 - **Data set:** WEUSEDTO, residential water end-use data from one apartment, licence **CC BY 4.0**.
