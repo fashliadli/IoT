@@ -26,30 +26,6 @@ The notebook also contains checks on the sensor working range and the tail of th
 - **Citation:** please cite the dataset publication listed in the README of the dataset repository.
 - **Not included here.** The data files are not part of this repository; download them as described below.
 
-## How to run
-
-1. Download the `WEUSEDTO-Data` repository as a ZIP file and unzip it next to the notebook. The folder name starts with `WEUSEDTO-Data-`.
-2. Install the requirements:
-   ```bash
-   pip install pandas numpy matplotlib jupyter
-   ```
-3. Open `Water_meter.ipynb` and use **Restart & Run All**.
-
-Expected layout:
-
-```text
-.
-├── Water_meter.ipynb
-├── WEUSEDTO-Data-<commit>/      # downloaded, not part of this repository
-│   └── Dataset/
-│       ├── feed_Shower.MYD.csv
-│       └── ...
-├── figures/                     # created by the notebook
-└── outputs/                     # created by the notebook
-```
-
-Files written to `outputs/`: `profile_shower.json` (all results of the shower analysis), `fingerprint_shower.csv`, `events_shower.csv`, `fingerprint_fixtures.csv` and `behaviour_fixtures.csv`.
-
 ## Data issues found
 
 - **Washbasin:** one row has an impossible timestamp (time jumps back by about 50 years); it is removed by a time filter.
